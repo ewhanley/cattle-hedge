@@ -14,11 +14,16 @@
       <h2>Inputs</h2>
     </header>
     <label for="marketWt">Market Weight:</label>
+    <br/>
     <input id="marketWt" type="number" name="marketWt" data-bind="value: marketWt">
+    <br/>
     <label for="ADG">ADG:</label>
+    <br/>
     <input id="ADG" type="number" name="ADG" data-bind="value: ADG">
+    <br/>
     <label for="buyDate">Buy Date:</label>
-    <input id="buyDate" type="date" name="buyDate" date-bind="value: buyDate">
+    <br/>
+    <input id="buyDate" type="date" data-bind="value: buyDate" />
   </nav>
 
   <main id="panel">
@@ -28,12 +33,16 @@
     </header>
     <p data-bind="text: marketWt"></p>
     <p data-bind="text: ADG"></p>
+    <p data-bind="text : fmtBuyDate"></p>
+    <hr /> Confirm that view model actually changes / debug info:
+    <pre data-bind="text: ko.toJSON($root)"></pre>
   </main>
 
 
-  <script src="./js/lib/knockout-3.4.2.js"></script>
-  <script src="./js/lib/slideout.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src=" ./js/lib/knockout-3.4.2.js "></script>
+  <script src="./js/lib/moment.min.js "></script>
+  <script src="./js/lib/slideout.min.js "></script>
+  <script src="./js/index.js "></script>
 
 </body>
 
