@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cow-culator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <link rel='stylesheet' href="./css/styles.css">
+</head>
+
+<body>
+  <nav id="menu">
+    <header class="menu-header">
+      <h2>Inputs</h2>
+    </header>
+    <label for="marketWt">Market Weight:</label>
+    <input id="marketWt" type="number" name="marketWt" data-bind="value: marketWt">
+    <label for="ADG">ADG:</label>
+    <input id="ADG" type="number" name="ADG" data-bind="value: ADG">
+    <label for="buyDate">Buy Date:</label>
+    <input id="buyDate" type="date" name="buyDate" date-bind="value: buyDate">
+  </nav>
+
+  <main id="panel">
+    <header>
+      <button class="toggle-button">☰</button>
+      <h2>Panel</h2>
+    </header>
+    <p data-bind="text: marketWt"></p>
+    <p data-bind="text: ADG"></p>
+  </main>
+
+
+  <script src="./js/lib/knockout-3.4.2.js"></script>
+  <script src="./js/lib/slideout.min.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
